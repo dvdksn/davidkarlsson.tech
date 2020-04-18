@@ -1,0 +1,8 @@
+<header>
+    <nav class="topnav">
+        <a href="{{ .Site.BaseURL }}">Home</a>
+        {{ range .Site.Sections }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+    </nav>
+</header>
