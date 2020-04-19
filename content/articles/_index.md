@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Articles
 ---
 
 << Blog section placeholder >>

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Fira+Sans&family=Playfair+Display&family=Montserrat&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css");
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans", sans-serif;
+}
+
+.cursive {
+    font-family: "Pacifico", cursive;
+}
+
+code {
+    font-family: "Hack", monospace;
+}
+
+a {
+    color: hsl(203, 69%, 50%);
+    text-decoration: none;
+}

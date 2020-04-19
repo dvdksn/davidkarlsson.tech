@@ -3,10 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ $styles := resources.Get "sass/styles.scss" | resources.ToCSS | resources.Minify }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+    {{ $menuToggle := resources.Get "js/nav-menu-toggle.js" }}
+    <script src="{{ $menuToggle.RelPermalink }}" async></script>
 </head>
 <body>
-    {{ partial "header.html" .  }}
-    {{ block "main" . }}
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    <main>
+        {{ block "main" . }}
+        {{ end }}
+    </main>
+    {{ block "scripts" . }}
     {{ end }}
 </body>
 </html>

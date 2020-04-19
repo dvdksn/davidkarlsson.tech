@@ -1,8 +1,13 @@
-<header>
-    <nav class="topnav">
-        <a href="{{ .Site.BaseURL }}">Home</a>
-        {{ range .Site.Sections }}
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
-    </nav>
-</header>
+{{ $currentPage := . }}
+
+<h1 class="cursive">{{ .Site.Title }}</h1>
+<button class="menu-btn">☰</button>
+<nav class="menu">
+    <div class="search">
+        <input type="search" placeholder="Search...">
+    </div>
+    <a href="{{ .Site.BaseURL }}"{{ if .IsHome }} class="active"{{ end }}>Home</a>
+    {{ range .Site.Sections }}
+        <a href="{{ .RelPermalink }}"{{ if eq . $currentPage }} class="active"{{ end }}>{{ .Title }}</a>
+    {{ end }}
+</nav>
