@@ -1,43 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Fira+Sans&family=Playfair+Display&family=Montserrat&display=swap");
-
-@font-face {
-    font-family: 'Hack';
-    src: url('fonts/hack-regular-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-regular-subset.woff?sha=3114f1256') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Hack';
-    src: url('fonts/hack-bold-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-bold-subset.woff?sha=3114f1256') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Hack';
-    src: url('fonts/hack-italic-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-italic-webfont.woff?sha=3114f1256') format('woff');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Hack';
-    src: url('fonts/hack-bolditalic-subset.woff2?sha=3114f1256') format('woff2'), url('fonts/hack-bolditalic-subset.woff?sha=3114f1256') format('woff');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Pacifico&family=Fira+Sans&family=Playfair+Display&family=Montserrat&display=swap");
 
 body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .menu {
     font-family: "Fira Sans", sans-serif;
 }
 
@@ -47,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 code {
-    font-family: "Hack", monospace;
+    font-family: "Fira Mono", monospace;
 }
 
 button,
