@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "home.scss";
 @import "global.scss";
+@import "variables.scss";
 
 /* 
     ----------------------------
@@ -24,7 +25,22 @@ body {
 main {
     margin: 1rem;
     padding: 1rem;
-    flex-grow: 1;
+    flex-basis: 50%;
+    .title {
+        border-bottom: 10px solid $orange;
+    };
+    @media screen and (min-width: 768px) {
+        .title {
+            margin: 3rem 1rem;
+        };
+        article {
+            margin: 2rem 2rem;
+        }
+    };
+    a {
+        text-decoration: none;
+        box-shadow: inset 0 -0.2em $lightblue;
+    };
 }
 
 @media only screen and (min-width: 768px) {
