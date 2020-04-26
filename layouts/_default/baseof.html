@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     {{ $styles := resources.Get "sass/styles.scss" | resources.ToCSS | resources.Minify }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
@@ -9,10 +11,10 @@
     <script src="{{ $menuToggle.RelPermalink }}" async></script>
 </head>
 <body>
-    <header>
+    <header class="dark">
         {{ partial "header.html" . }}
     </header>
-    <main>
+    <main class="light">
         {{ block "main" . }}
         {{ end }}
     </main>

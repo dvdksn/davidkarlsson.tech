@@ -1,10 +1,11 @@
 {{ $currentPage := . }}
 
-<h1 class="cursive">{{ .Site.Title }}</h1>
+<h1 class="cursive">{{ .Site.Title }}<code>.tech</code></h1>
 <button class="menu-btn">☰</button>
-<nav class="menu">
+<nav class="menu dark">
     <div class="search">
-        <input type="search" placeholder="Search...">
+        <input type="search" aria-labelledby="search-button" placeholder="Search...">
+        <button id="search-button" type="submit"><img alt="Search" src="/images/magnifying_glass_icon.svg" width="24px" height="24px"></button>
     </div>
     <a href="{{ .Site.BaseURL }}"{{ if .IsHome }} class="active"{{ end }}>Home</a>
     {{ range .Site.Sections }}

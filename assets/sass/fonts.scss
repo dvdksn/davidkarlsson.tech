@@ -12,13 +12,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .cursive {
     font-family: "Pacifico", cursive;
+    font-weight: 300;
 }
 
 code {
     font-family: "Hack", monospace;
 }
 
-a {
-    color: hsl(203, 69%, 50%);
-    text-decoration: none;
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
 }

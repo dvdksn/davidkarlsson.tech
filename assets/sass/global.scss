@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+.dark {
+    background: $darkblue;
+    * {
+        color: $white;
+    };
+}
+
+.light {
+    background: $white;
+    * {
+        color: $darkblue;
+    }
+}

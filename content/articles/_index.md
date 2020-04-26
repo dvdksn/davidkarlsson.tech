@@ -2,4 +2,4 @@
 title: Articles
 ---
 
-<< Blog section placeholder >>
+<< Articles section placeholder >>
