@@ -1,6 +1,8 @@
 {{ $currentPage := . }}
 
-<h1 class="cursive">{{ .Site.Title }}<code>.tech</code></h1>
+<a href="{{ .Site.BaseURL }}" {{ if .IsHome }} class="active" {{ end }}>
+    <h1 class="cursive">{{ .Site.Title }}<code>.tech</code></h1>
+</a>
 <button class="menu-btn">☰</button>
 <nav class="menu dark">
     <div class="search">
@@ -13,7 +15,6 @@
             </svg>
         </button>
     </div>
-    <a href="{{ .Site.BaseURL }}"{{ if .IsHome }} class="active"{{ end }}>Home</a>
     {{ range .Site.Sections }}
         <a href="{{ .RelPermalink }}"{{ if eq . $currentPage }} class="active"{{ end }}>{{ .Title }}</a>
     {{ end }}
