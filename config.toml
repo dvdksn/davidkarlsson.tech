@@ -1,3 +1,7 @@
 baseURL = "https://davidkarlsson.tech/"
 languageCode = "en-us"
 title = "David Karlsson"
+
+[params]
+email = "davidkarlsson0@gmail.com"
+phone = "+4673-682-35-47"

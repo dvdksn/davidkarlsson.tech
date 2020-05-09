@@ -4,14 +4,9 @@ title: About
 
 {{< figure src="/images/me.jpg" alt="My portrait" >}}
 
-By profession, I'm a technical writer: I make documentation.
-
-Unprofessionally, I'm a father.
-I'm also enthusiastic about Formula 1 and catch and release fishing.
-
-## My background
-
-I have a background doing:
+I have 8 years of experience with the documentation industry.
+In this time, I have had the opportunity of working with every aspect
+of documentation development, including:
 
 - Graphics design
 - Technical illustration
@@ -19,16 +14,40 @@ I have a background doing:
 - Conversion and migration
 - Information architecture
 
-I started my career in visual communication, creating technical vector graphics
-and 3D animations. Soon I also started to work with text, as a technical writer.
-I think being able to work multiple mediums is a great strength.
-Sometimes, combining them helps to convey a message more clearly.
+## Background
 
-I am also violently interested in tools and frameworks surrounding documentation.
-This fascination began when I was first introduced to structured writing with XML.
-For years, I championed DITA as the one, true documentation framework.
+I started my career in visual communication, creating technical 2D vector
+and 3D graphics. Soon after I also got into writing. That was also when I
+was first introduced to structured writing in XML.
 
-Recently, I have gravitated away from XML-based tools, towards **docs as code**.
-DevOps culture and CI/CD are both central concepts in modern software development.
-There is no doubt that docs need to keep up with the blazing pace of engineers.
-I believe that doing docs as code is the way to do that.
+With time, I grew more and more interested in tools and frameworks.
+I began working with conversion and data migration projects.
+Those typically involved moving unstructured or semi-structured content
+into a topic-based information architecture and a CCMS.
+
+For years have evangelized DITA, and content strategy projects became my
+primary occupation.
+
+I am self-taught in every discipline except illustration/graphics design.
+
+## Present
+
+Nowadays, I have largely moved away from XML-based tooling, in favor of
+[docs as code](https://www.writethedocs.org/guide/docs-as-code/). As I spent
+more time I spent in software projects, it became obvious to me that the traditional
+tools stack didn't quite satisfy the needs of agile software development.
+Technical writers need a way to keep up with the pace of developers.
+I believe that docs as code is the way to do that.
+
+As a side-effect of deep-diving into git workflows and static site generators,
+I've gotten heavily invested in web development. And I love it! That's also
+the main reason behind creating this website.
+
+## About this site
+
+The code for this site is all available on
+[GitHub](https://github.com/dvdksn/davidkarlsson.tech)!
+
+I created this website from scratch, using [Hugo](https://gohugo.io/).
+
+For the hosting and build workflow, I use [Netlify](https://www.netlify.com/).
