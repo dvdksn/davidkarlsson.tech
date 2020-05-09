@@ -2,4 +2,4 @@
 title: Contact
 ---
 
-<< Contact section placeholder >>
+Reach out if you wanna talk docs!
