@@ -1,4 +1,4 @@
-{{ $currentPage := . }}
+{{ $CurrentPage := . }}
 
 <a href="{{ .Site.BaseURL }}" {{ if .IsHome }} class="active" {{ end }}>
     <h1 class="cursive">{{ .Site.Title }}<code>.tech</code></h1>
@@ -23,7 +23,8 @@
     */}}
     {{ with .Site.Home }}
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}"{{ if eq . $currentPage }} class="underline"{{ end }}>{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}" {{ if or (.IsAncestor $CurrentPage) (eq . $CurrentPage) }} class="underline"
+                {{ end }}>{{ .Title }}</a>
         {{ end }}
     {{ end }}
 </nav>

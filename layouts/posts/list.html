@@ -10,7 +10,7 @@
                     <h2 class="post-title underline">{{ .Title }}</h2>
                 </a>
                 {{ $Date := .Date.Format "Monday, January 2, 2006" }}
-                <time class="post-date" datetime="{{ $Date }}">{{ $Date }}</span>
+                <time class="post-date" datetime="{{ $Date }}">{{ $Date }}</time>
                 <p class="post-summary">{{ .Summary }}</p>
             </div>
         {{ end }}
