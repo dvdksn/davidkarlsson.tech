@@ -5,7 +5,7 @@ title: Home
 # Hey!
 
 I'm David Karlsson, I'm a technical writer from
-[Värmland, Sweden](https://en.wikipedia.org/wiki/V%C3%A4rmland)! 🇸🇪
+🇸🇪 [Värmland](https://en.wikipedia.org/wiki/V%C3%A4rmland)!
 
 Welcome to my personal website and blog.
 
