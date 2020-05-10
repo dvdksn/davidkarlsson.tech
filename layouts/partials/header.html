@@ -17,7 +17,7 @@
     </div>
     {{ with .Site.Home }}
         {{ range .Pages }}
-            <a href="{{ .RelPermalink }}"{{ if eq . $currentPage }} class="active"{{ end }}>{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}"{{ if eq . $currentPage }} class="underline"{{ end }}>{{ .Title }}</a>
         {{ end }}
     {{ end }}
 </nav>

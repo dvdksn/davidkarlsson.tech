@@ -7,7 +7,7 @@
         {{ range .Pages }}
             <div class="entry">
                 <a href="{{ .RelPermalink }}">
-                    <h2 class="post-title">{{ .Title }}</h2>
+                    <h2 class="post-title underline">{{ .Title }}</h2>
                 </a>
                 {{ $Date := .Date.Format "Monday, January 2, 2006" }}
                 <time class="post-date" datetime="{{ $Date }}">{{ $Date }}</span>
