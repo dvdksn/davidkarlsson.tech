@@ -3,7 +3,9 @@ languageCode = "en-us"
 title = "David Karlsson"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-[params]
+[params.meta]
+description = "Personal website and blog of technical writer David Karlsson"
+
 [params.contact]
 email = "davidkarlsson0@gmail.com"
 phone = "+4673-682-35-47"
