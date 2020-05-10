@@ -3,6 +3,7 @@
 @import "home.scss";
 @import "global.scss";
 @import "variables.scss";
+@import "posts.scss";
 
 /* 
     ----------------------------
@@ -30,14 +31,6 @@ main {
     .title {
         border-bottom: 10px solid $orange;
     };
-    @media screen and (min-width: 768px) {
-        .title {
-            margin: 3rem 1rem;
-        };
-        article {
-            margin: 2rem 2rem;
-        }
-    };
     img {
         max-width: 100%;
     }
@@ -47,4 +40,7 @@ main {
     body {
         flex-direction: row; 
     };
+    main {
+        margin: 1rem 2rem;
+    }
 }

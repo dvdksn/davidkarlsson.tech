@@ -17,7 +17,7 @@ header {
             font-size: 14pt;
         };
     };
-    .menu {
+    #menu {
         display: none;
         flex-direction: column;
         align-items: center;
@@ -55,7 +55,7 @@ header {
             box-shadow: inset 0 -0.5rem $blue;
         }
     };
-    .menu-btn {
+    #menu-btn {
         background: transparent;
         border: none;
         font-size: 30px;
@@ -63,7 +63,7 @@ header {
     }
 }
 
-.menu.open {
+#menu.open {
     display: flex;
     position: absolute;
     right: 0;
@@ -87,10 +87,10 @@ header {
             margin: 1rem;
             border-bottom: 3px solid $orange;
         }
-        .menu-btn {
+        #menu-btn {
             display: none;
         };
-        .menu {
+        #menu {
             display: flex;
             width: 100%;
         };

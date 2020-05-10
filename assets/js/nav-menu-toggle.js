@@ -1,5 +1,5 @@
-const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
+const menuBtn = document.querySelector("#menu-btn");
+const menu = document.querySelector("#menu");
 
 const toggleMenu = () => {
     menu.classList.toggle("open");

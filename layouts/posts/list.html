@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <h1 class="title">{{ .Title }}</h1>
+    <article>
+        {{ .Content }}
+    </article>
+    <nav id="posts">
+        {{ range .Pages }}
+            <div class="entry">
+                <a href="{{ .RelPermalink }}">
+                    <h2 class="post-title">{{ .Title }}</h2>
+                </a>
+                {{ $Date := .Date.Format "Monday, January 2, 2006" }}
+                <time class="post-date" datetime="{{ $Date }}">{{ $Date }}</span>
+                <p class="post-summary">{{ .Summary }}</p>
+            </div>
+        {{ end }}
+    </nav>
+{{ end }}
