@@ -28,29 +28,6 @@ header {
             text-align: center;
             text-decoration: none;
         };
-        .search {
-            padding: 1rem;
-            display: flex;
-            input[type=search] {
-                -moz-appearance: textfield;
-                -webkit-appearance: textfield;
-                appearance: textfield;
-                border-radius: 2rem;
-                padding: 6px 12px;
-                font-size: 18px;
-                border: none;
-                flex-shrink: 1;
-                width: 80%;
-                color: $lightblue;
-            };
-            #search-button {
-                background: $orange;
-                margin-left: 10px;
-                border: none;
-                font-size: 14px;
-                border-radius: 2rem;
-            }
-        };
     };
     #menu-btn {
         background: transparent;

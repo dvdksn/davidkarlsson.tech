@@ -5,6 +5,11 @@
 </a>
 <button id="menu-btn">☰</button>
 <nav id="menu" class="dark">
+    {{/* 
+        TODO:
+        Add Javascript search
+        (When there's content)
+        
     <div class="search">
         <input type="search" aria-labelledby="search-button" placeholder="Search...">
         <button id="search-button" type="submit">
@@ -15,6 +20,7 @@
             </svg>
         </button>
     </div>
+    */}}
     {{ with .Site.Home }}
         {{ range .Pages }}
             <a href="{{ .RelPermalink }}"{{ if eq . $currentPage }} class="underline"{{ end }}>{{ .Title }}</a>
