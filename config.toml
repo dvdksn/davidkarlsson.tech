@@ -1,6 +1,7 @@
 baseURL = "https://davidkarlsson.tech/"
 languageCode = "en-us"
 title = "David Karlsson"
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 email = "davidkarlsson0@gmail.com"
