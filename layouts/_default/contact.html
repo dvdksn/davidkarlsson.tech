@@ -1,12 +1,16 @@
 {{ define "main" }}
+{{ $Phone := .Site.Params.contact.phone }}
+{{ $Email := .Site.Params.contact.email }}
+{{ $LinkedIn := .Site.Params.contact.linkedin }}
+{{ $Facebook := .Site.Params.contact.facebook }}
 <h1 class="title">{{ .Title }}</h1>
 <article>
     {{ .Content }}
-    <p>📞 <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.contact.phone }}</a></p>
-    <p>✉️ <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.contact.email }}</a></p>
+    <p>📞 <a href="tel:{{ $Phone }}">{{ $Phone }}</a></p>
+    <p>✉️ <a href="mailto:{{ $Email }}">{{ $Email }}</a></p>
     <div class="contact-links">
         <div id="linkedin">
-            <a href="{{ .Site.Params.contact.linkedin }}">
+            <a href="{{ $LinkedIn }}">
                 <svg id="Group_1282" data-name="Group 1282" xmlns="http://www.w3.org/2000/svg" width="76.624"
                     height="65.326" viewBox="0 0 76.624 65.326">
                     <path id="Path_2525" data-name="Path 2525"
@@ -22,7 +26,7 @@
             </a>
         </div>
         <div id="facebook">
-            <a href="{{ .Site.Params.contact.facebook }}">
+            <a href="{{ $Facebook }}">
                 <svg viewBox="0 0 36 36" fill="url(#jsc_s_2)" height="64"
                     width="64">
                     <defs>

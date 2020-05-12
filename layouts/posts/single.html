@@ -3,6 +3,7 @@
     {{ $Date := .Date.Format "Monday, January 2, 2006" }}
     <time class="post-date" datetime="{{ $Date }}">{{ $Date }}</time>
     <article>
+        <p class="summary">{{ .Summary }}</p>
         {{ .Content }}
     </article>
 {{ end }}

@@ -3,11 +3,15 @@ languageCode = "en-us"
 title = "David Karlsson"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
+[markup]
+  [markup.highlight]
+    style = "github"
+
 [params.meta]
 description = "Personal website and blog of technical writer David Karlsson"
 
 [params.contact]
-email = "davidkarlsson0@gmail.com"
+email = "hello@davidkarlsson.tech"
 phone = "+4673-682-35-47"
 linkedin = "https://www.linkedin.com/in/david-karlsson-7b533449/"
 facebook = "https://www.facebook.com/wintastic"

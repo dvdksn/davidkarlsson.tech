@@ -1,16 +1,23 @@
+@import "variables.scss";
+
 #posts {
     margin-top: 3rem;
 }
 
 .post-title {
-    width: max-content;
     display: block;
+    word-wrap: break-word;
 };
 
 .post-date {
     font-size: 14px;
     font-style: italic;
 };
+
+.summary {
+    font-size: 20px;
+    color: $blue;
+}
 
 @media screen and (min-width: 768px) {
     #posts {
