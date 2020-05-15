@@ -9,7 +9,7 @@
 
 .light {
     background: $white;
-    * {
+    *:not(code) {
         color: $darkblue;
     }
 }

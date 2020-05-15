@@ -5,7 +5,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [markup]
   [markup.highlight]
-    style = "github"
+    style = "monokailight"
 
 [params.meta]
 description = "Personal website and blog of technical writer David Karlsson"
