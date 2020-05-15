@@ -33,7 +33,7 @@ For years I supported clients with DITA consultation, and content strategy proje
 
 Nowadays, I am getting knee-deep in learning about
 [docs as code](https://www.writethedocs.org/guide/docs-as-code/).
-As I spent more time I spent in software projects,
+As I spent more time in software projects,
 it became obvious to me that the traditional tools stack didn't quite
 satisfy the needs of agile software development.
 Technical writers need a way to keep up with the pace of developers.
