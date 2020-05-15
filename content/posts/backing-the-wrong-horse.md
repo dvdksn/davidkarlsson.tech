@@ -74,7 +74,7 @@ What's interesting is that all of these advancements were made without changing 
 
 But there is one inherent property of lightweight markup languages that can't be changed: it is not semantic. It is minimal and strictly presentational. Structured writing requires content types, which are labeled with metadata, and can be constrained and validated.
 
-There are some lightweight markup languages which supports some level of semantic tagging. Though I've personally mostly worked with Markdown, so I'm not going to talk on behalf of other formats.
+There are some lightweight markup languages which support some level of semantic tagging. Though I've personally mostly worked with Markdown, so I'm not going to talk on behalf of other formats.
 
 For Markdown files, semanticity is solved by adding a front matter section in the beginning of the file. Unlike the unstructured body of the document, the front matter is structured data, usually YAML. This is in my opinion a far better way to work with structured content, than how we're used to with XML. Arrays, key-value pairs, maps, and objects... simply put, a fantastic API, and still easy to read.
 
@@ -93,7 +93,7 @@ summary: >
 
 There is really no limit to how much of your content goes into the front matter, versus how much you put in the body. [Forestry](https://forestry.io/) is a git-based headless CMS that takes structured content with frontmatter to the extreme. I think Forestry could be a great tool in a JAM-stack documentation project, if only it had some support for a branch-based editorial workflow.
 
-API-driven headless CMSes solves this differently. Though I think I'll save that subject for a future post.
+API-driven headless CMSes solve this differently. Though I think I'll save that subject for a future post.
 
 Inline annotation is still not solved, at least not for Markdown.
 
