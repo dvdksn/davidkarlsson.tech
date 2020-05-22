@@ -1,0 +1,98 @@
+/* 
+    ----------------------------
+        Base / main styles
+    ----------------------------
+*/ 
+
+@import "variables.scss";
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: 50%;
+    .title {
+        border-bottom: 10px solid $orange;
+    };
+    img {
+        max-width: 100%;
+    };
+    hr {
+        margin: 100px;
+        border: 1px solid $orange;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        flex-direction: row; 
+    };
+    main {
+        margin: 1rem 2rem;
+    }
+}
+
+#posts {
+    margin-top: 3rem;
+    .post-title {
+        display: block;
+        word-wrap: break-word;
+    };
+    .post-date {
+        font-size: 14px;
+        font-style: italic;
+    };
+    .summary {
+        font-size: 20px;
+        color: $blue;
+    };
+    @media screen and (min-width: 768px) {
+        margin-left: 2rem;
+    }
+}
+
+.contact-links {
+    display: flex;
+    margin-top: 3rem;
+
+    div {
+        margin-left: 40px;
+    }
+
+    a {
+        box-shadow: none;
+    }
+}
+
+.home {
+    margin: 3rem 0;
+    h1 {
+        font-size: 70px;
+    };
+}
+
+.dark {
+    background: $darkblue;
+    * {
+        color: $white;
+    };
+}
+
+.light {
+    background: $white;
+    *:not(code) {
+        color: $darkblue;
+    }
+}
