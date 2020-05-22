@@ -8,7 +8,7 @@
             {{ partial "header.html" . }}
         </header>
         <main class="light">
-                    {{ if eq (.Hugo.Environment) "review" }}
+                    {{ if eq (hugo.Environment) "review" }}
                         <aside class="review-pane">
                         <h3>Page info</h3>
                             {{ if .GitInfo }}
@@ -25,9 +25,10 @@
                                 <h4>Links</h4>
                                 {{ $RepoURL := .Site.Params.GitHub.RepoURL }}
                                 {{ $Branch := .Site.Params.GitHub.Branch }}
+                                {{ $Dir := .File.Dir }}
                                 {{ $File := .File.LogicalName }}
                                 <ul>
-                                    <li><a href="{{ $RepoURL }}/blob/{{ $Branch }}/content/{{ $File }}">Source File</a></li>
+                                    <li><a href="{{ $RepoURL }}/blob/{{ $Branch }}/content/{{ $Dir }}{{ $File }}">Source File</a></li>
                                     <li><a href="https://github.com/dvdksn/davidkarlsson.tech/commit/{{ .GitInfo.Hash }}">Last Commit</a></li>
                                 </ul>
                             {{ else }}

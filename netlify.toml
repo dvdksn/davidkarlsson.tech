@@ -6,8 +6,8 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.71.0"
 HUGO_ENV = "production"
 
-[context.production.deploy-preview]
+[context.deploy-preview.environment]
 HUGO_VERSION = "0.71.0"
-HUGO_ENABLEGITINFO = "true"
 HUGO_ENV = "review"
-command = "env HUGO_PARAMS_GIT_BRANCH=$BRANCH && hugo --gc --minify"
+HUGO_ENABLEGITINFO = "true"
+HUGO_PARAMS_GITHUB_BRANCH = "$BRANCH"
