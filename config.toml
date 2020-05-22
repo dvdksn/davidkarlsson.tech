@@ -1,7 +1,11 @@
 baseURL = "https://davidkarlsson.tech/"
 languageCode = "en-us"
-title = "David Karlsson"
+title = "davidkarlsson.tech"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[author]
+firstname = "David"
+lastname = "Karlsson"
 
 [markup]
   [markup.highlight]

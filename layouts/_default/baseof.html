@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ .Site.Params.meta.description }}">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.meta.description }}">
+    <meta property="og:description" content="{{ .Site.Params.meta.description }}" />
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    {{ block "meta" . }}
+        <meta property="og:type" content="website" />
+    {{ end }}
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet preconnect" type="text/css"
         href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Pacifico&family=Fira+Sans&family=Playfair+Display&family=Montserrat&display=swap">

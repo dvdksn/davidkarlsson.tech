@@ -1,49 +1,56 @@
+{{ define "meta" }}
+    <meta property="og:type" content="profile" />
+    <meta property="og:profile:first_name" content="{{ .Site.Author.firstname }}" />
+    <meta property="og:profile:last_name" content="{{ .Site.Author.lastname }}" />
+    <meta property="og:profile:gender" content="male" />
+{{ end }}
+
 {{ define "main" }}
-{{ $Phone := .Site.Params.contact.phone }}
-{{ $Email := .Site.Params.contact.email }}
-{{ $LinkedIn := .Site.Params.contact.linkedin }}
-{{ $Facebook := .Site.Params.contact.facebook }}
-<h1 class="title">{{ .Title }}</h1>
-<article>
-    {{ .Content }}
-    <p>📞 <a href="tel:{{ $Phone }}">{{ $Phone }}</a></p>
-    <p>✉️ <a href="mailto:{{ $Email }}">{{ $Email }}</a></p>
-    <div class="contact-links">
-        <div id="linkedin">
-            <a href="{{ $LinkedIn }}">
-                <svg id="Group_1282" data-name="Group 1282" xmlns="http://www.w3.org/2000/svg" width="76.624"
-                    height="65.326" viewBox="0 0 76.624 65.326">
-                    <path id="Path_2525" data-name="Path 2525"
-                        d="M1165,274.515a1.2,1.2,0,0,0,1.21-1.269c0-.9-.543-1.33-1.657-1.33h-1.8v4.712h.677v-2.054h.832l.019.025,1.291,2.029h.724l-1.389-2.1Zm-.783-.472h-.785V272.45h.995c.514,0,1.1.084,1.1.757,0,.774-.593.836-1.314.836"
-                        transform="translate(-1092.136 -213.406)" fill="#0a66c2" />
-                    <path id="Path_2520" data-name="Path 2520"
-                        d="M958.98,112.559h-9.6V97.525c0-3.585-.064-8.2-4.993-8.2-5,0-5.765,3.906-5.765,7.939v15.294h-9.6V81.642h9.216v4.225h.129a10.1,10.1,0,0,1,9.093-4.994c9.73,0,11.524,6.4,11.524,14.726ZM918.19,77.416a5.571,5.571,0,1,1,5.57-5.572,5.571,5.571,0,0,1-5.57,5.572m4.8,35.143h-9.61V81.642h9.61Zm40.776-55.2h-55.21a4.728,4.728,0,0,0-4.781,4.67v55.439a4.731,4.731,0,0,0,4.781,4.675h55.21a4.741,4.741,0,0,0,4.8-4.675V62.025a4.738,4.738,0,0,0-4.8-4.67"
-                        transform="translate(-903.776 -57.355)" fill="#0a66c2" />
-                    <path id="Path_2526" data-name="Path 2526"
-                        d="M1156.525,264.22a4.418,4.418,0,1,0,.085,0h-.085m0,8.33a3.874,3.874,0,1,1,3.809-3.938c0,.022,0,.043,0,.065a3.791,3.791,0,0,1-3.708,3.871h-.1"
-                        transform="translate(-1084.362 -207.809)" fill="#0a66c2" />
-                </svg>
-            </a>
+    {{ $Phone := .Site.Params.contact.phone }}
+    {{ $Email := .Site.Params.contact.email }}
+    {{ $LinkedIn := .Site.Params.contact.linkedin }}
+    {{ $Facebook := .Site.Params.contact.facebook }}
+    <h1 class="title">{{ .Title }}</h1>
+    <article>
+        {{ .Content }}
+        <p>📞 <a href="tel:{{ $Phone }}">{{ $Phone }}</a></p>
+        <p>✉️ <a href="mailto:{{ $Email }}">{{ $Email }}</a></p>
+        <div class="contact-links">
+            <div id="linkedin">
+                <a href="{{ $LinkedIn }}">
+                    <svg id="Group_1282" data-name="Group 1282" xmlns="http://www.w3.org/2000/svg" width="76.624"
+                        height="65.326" viewBox="0 0 76.624 65.326">
+                        <path id="Path_2525" data-name="Path 2525"
+                            d="M1165,274.515a1.2,1.2,0,0,0,1.21-1.269c0-.9-.543-1.33-1.657-1.33h-1.8v4.712h.677v-2.054h.832l.019.025,1.291,2.029h.724l-1.389-2.1Zm-.783-.472h-.785V272.45h.995c.514,0,1.1.084,1.1.757,0,.774-.593.836-1.314.836"
+                            transform="translate(-1092.136 -213.406)" fill="#0a66c2" />
+                        <path id="Path_2520" data-name="Path 2520"
+                            d="M958.98,112.559h-9.6V97.525c0-3.585-.064-8.2-4.993-8.2-5,0-5.765,3.906-5.765,7.939v15.294h-9.6V81.642h9.216v4.225h.129a10.1,10.1,0,0,1,9.093-4.994c9.73,0,11.524,6.4,11.524,14.726ZM918.19,77.416a5.571,5.571,0,1,1,5.57-5.572,5.571,5.571,0,0,1-5.57,5.572m4.8,35.143h-9.61V81.642h9.61Zm40.776-55.2h-55.21a4.728,4.728,0,0,0-4.781,4.67v55.439a4.731,4.731,0,0,0,4.781,4.675h55.21a4.741,4.741,0,0,0,4.8-4.675V62.025a4.738,4.738,0,0,0-4.8-4.67"
+                            transform="translate(-903.776 -57.355)" fill="#0a66c2" />
+                        <path id="Path_2526" data-name="Path 2526"
+                            d="M1156.525,264.22a4.418,4.418,0,1,0,.085,0h-.085m0,8.33a3.874,3.874,0,1,1,3.809-3.938c0,.022,0,.043,0,.065a3.791,3.791,0,0,1-3.708,3.871h-.1"
+                            transform="translate(-1084.362 -207.809)" fill="#0a66c2" />
+                    </svg>
+                </a>
+            </div>
+            <div id="facebook">
+                <a href="{{ $Facebook }}">
+                    <svg viewBox="0 0 36 36" fill="url(#jsc_s_2)" height="64"
+                        width="64">
+                        <defs>
+                            <linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_s_2">
+                                <stop offset="0%" stop-color="#0062E0"></stop>
+                                <stop offset="100%" stop-color="#19AFFF"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z">
+                        </path>
+                        <path fill="white"
+                            d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
         </div>
-        <div id="facebook">
-            <a href="{{ $Facebook }}">
-                <svg viewBox="0 0 36 36" fill="url(#jsc_s_2)" height="64"
-                    width="64">
-                    <defs>
-                        <linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_s_2">
-                            <stop offset="0%" stop-color="#0062E0"></stop>
-                            <stop offset="100%" stop-color="#19AFFF"></stop>
-                        </linearGradient>
-                    </defs>
-                    <path
-                        d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z">
-                    </path>
-                    <path fill="white"
-                        d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z">
-                    </path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</article>
+    </article>
 {{ end }}

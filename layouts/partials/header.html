@@ -1,7 +1,7 @@
 {{ $CurrentPage := . }}
 
 <a href="{{ .Site.BaseURL }}" {{ if .IsHome }} class="active" {{ end }}>
-    <h1 class="cursive">{{ .Site.Title }}<code>.tech</code></h1>
+    <h1 class="cursive">{{ .Site.Author.firstname }} {{ .Site.Author.lastname }}<code>.tech</code></h1>
 </a>
 <button id="menu-btn">☰</button>
 <nav id="menu" class="dark">
