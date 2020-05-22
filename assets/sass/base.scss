@@ -41,6 +41,7 @@ main {
     };
     main {
         margin: 1rem 2rem;
+        max-width: 50%;
     }
 }
 
@@ -50,10 +51,6 @@ main {
         display: block;
         word-wrap: break-word;
     };
-    .post-date {
-        font-size: 14px;
-        font-style: italic;
-    };
     .summary {
         font-size: 20px;
         color: $blue;
@@ -62,6 +59,11 @@ main {
         margin-left: 2rem;
     }
 }
+
+.post-date {
+    font-size: 14px;
+    font-style: italic;
+};
 
 .contact-links {
     display: flex;
@@ -94,5 +96,25 @@ main {
     background: $white;
     *:not(code) {
         color: $darkblue;
+    }
+}
+
+
+.review-pane {
+    border: 3px dotted $lightorange;
+    padding: 10px;
+    h3, h4, p {
+        margin: 5px;
+    };
+    h3 {
+        text-align: right;
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20vw;
+        height: auto;
     }
 }

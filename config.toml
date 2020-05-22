@@ -19,3 +19,7 @@ email = "hello@davidkarlsson.tech"
 phone = "+4673-682-35-47"
 linkedin = "https://www.linkedin.com/in/david-karlsson-7b533449/"
 facebook = "https://www.facebook.com/wintastic"
+
+[params.GitHub]
+RepoURL = "https://github.com/dvdksn/davidkarlsson.tech"
+Branch = "master"
