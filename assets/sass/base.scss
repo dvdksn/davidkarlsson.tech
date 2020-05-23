@@ -28,6 +28,10 @@ main {
     };
     img {
         max-width: 100%;
+        max-height: 50vh;
+    };
+    figure {
+        margin: 10px;
     };
     hr {
         margin: 100px;
@@ -117,4 +121,37 @@ main {
         width: 20vw;
         height: auto;
     }
+}
+
+.zoom {
+    scale: 1.5;
+    border: 1px solid $orange;
+    border-radius: 10px;
+};
+
+.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    img {
+        display:block;
+        margin: 25% auto;
+        max-height: 80%;
+        width: 100%;
+        border: 3px solid $darkblue;
+        border-radius: 5px;
+    };
+    @media screen and (min-width: 768px) {
+        max-width: 75%;
+        margin-left: 15%;
+        img {
+            margin: 5% auto;
+            height: 80%;
+            width: auto;
+        }
+    }
+}
+
+.fade {
+    opacity: .5;
 }
