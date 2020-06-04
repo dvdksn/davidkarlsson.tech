@@ -15,6 +15,8 @@ different aspects of technical writing, including:
 - Information architecture
 - Tools development
 
+I work for [Semcon!](https://semcon.com)
+
 ## Background
 
 I started my career in visual communication. I studied technical illustration,

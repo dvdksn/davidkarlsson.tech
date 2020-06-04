@@ -26,15 +26,18 @@ main {
     .title {
         border-bottom: 10px solid $orange;
     };
-    img {
-        max-width: 100%;
-        max-height: 50vh;
-        border: 3px solid $lightblue;
-        border-radius: 5px;
-    };
     figure {
         margin: 10px;
         max-width: max-content;
+        img {
+            max-width: 100%;
+            max-height: 50vh;
+            border: 3px solid $lightblue;
+            border-radius: 5px;
+        };
+        h4 {
+            margin: 5px 20px;
+        }
     };
     hr {
         margin: 100px;
