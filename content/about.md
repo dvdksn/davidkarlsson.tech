@@ -17,6 +17,8 @@ different aspects of technical writing, including:
 
 I work for [Semcon!](https://semcon.com)
 
+Lorem ipsum, adding some test content.
+
 ## Background
 
 I started my career in visual communication. I studied technical illustration,
