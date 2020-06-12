@@ -8,34 +8,34 @@
             {{ partial "header.html" . }}
         </header>
         <main class="light">
-                    {{ if eq (hugo.Environment) "review" }}
-                        <aside class="review-pane">
-                        <h3>Page info</h3>
-                            {{ if .GitInfo }}
-                                {{ with .GitInfo }}
-                                    <h4>Author</h4>
-                                    <p>{{ .AuthorName }}</p>
-                                    <h4>Date</h4>
-                                    <p>{{ .AuthorDate.Format "2006-01-06" }}</p>
-                                    <h4>Commit</h4>
-                                    <p>{{ .AbbreviatedHash }}</a></p>
-                                    <h4>Message</h4>
-                                    <p>{{ .Subject }}</p>
-                                {{ end }}
-                                <h4>Links</h4>
-                                {{ $RepoURL := .Site.Params.GitHub.RepoURL }}
-                                {{ $Branch := .Site.Params.GitHub.Branch }}
-                                {{ $Dir := .File.Dir }}
-                                {{ $File := .File.LogicalName }}
-                                <ul>
-                                    <li><a href="{{ $RepoURL }}/blob/{{ $Branch }}/content/{{ $Dir }}{{ $File }}">Source File</a></li>
-                                    <li><a href="https://github.com/dvdksn/davidkarlsson.tech/commit/{{ .GitInfo.Hash }}">Last Commit</a></li>
-                                </ul>
-                            {{ else }}
-                                <p>No git info found!</p>
-                            {{ end }}
-                        </aside>
+            {{ if eq (hugo.Environment) "review" }}
+                <aside class="review-pane">
+                <h3>Page info</h3>
+                    {{ if .GitInfo }}
+                        {{ with .GitInfo }}
+                            <h4>Author</h4>
+                            <p>{{ .AuthorName }}</p>
+                            <h4>Date</h4>
+                            <p>{{ .AuthorDate.Format "2006-01-06" }}</p>
+                            <h4>Commit</h4>
+                            <p>{{ .AbbreviatedHash }}</a></p>
+                            <h4>Message</h4>
+                            <p>{{ .Subject }}</p>
+                        {{ end }}
+                        <h4>Links</h4>
+                        {{ $RepoURL := .Site.Params.GitHub.RepoURL }}
+                        {{ $Branch := .Site.Params.GitHub.Branch }}
+                        {{ $Dir := .File.Dir }}
+                        {{ $File := .File.LogicalName }}
+                        <ul>
+                            <li><a href="{{ $RepoURL }}/blob/{{ $Branch }}/content/{{ $Dir }}{{ $File }}">Source File</a></li>
+                            <li><a href="https://github.com/dvdksn/davidkarlsson.tech/commit/{{ .GitInfo.Hash }}">Last Commit</a></li>
+                        </ul>
+                    {{ else }}
+                        <p>No git info found!</p>
                     {{ end }}
+                </aside>
+            {{ end }}
             {{ block "main" . }}
             {{ end }}
         </main>

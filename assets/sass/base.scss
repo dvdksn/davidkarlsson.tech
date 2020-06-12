@@ -39,6 +39,13 @@ main {
             margin: 5px 20px;
         }
     };
+    blockquote {
+        font-size: 0.95em;
+        margin: 0;
+        border-left: 5px solid $blue;
+        padding: 5px 20px;
+        background: $lightblue;
+    };
     hr {
         margin: 100px;
         border: 1px solid $orange;
