@@ -15,7 +15,7 @@ different aspects of technical writing, including:
 - Information architecture
 - Tools development
 
-I work for [Semcon!](https://semcon.com)
+I currently work for [Ericsson](https://ericsson.com) as an information architect.
 
 ## Background
 
@@ -29,12 +29,13 @@ I began working with conversion and data migration projects.
 Those typically involved moving unstructured or semi-structured content
 into a topic-based information architecture and a CCMS.
 
-For years I supported clients with DITA consultation, and content strategy projects became my primary occupation.
+For years I supported clients with DITA consultation, and content strategy
+projects became my primary occupation.
 
 ## Present
 
-Nowadays, I am getting knee-deep in learning about
-[docs as code](https://www.writethedocs.org/guide/docs-as-code/).
+For the last couple of years I have been pre-occupied discovering the
+world of [docs as code](https://www.writethedocs.org/guide/docs-as-code/).
 As I spent more time in software projects,
 it became obvious to me that the traditional tools stack didn't quite
 satisfy the needs of agile software development.
@@ -42,8 +43,8 @@ Technical writers need a way to keep up with the pace of developers.
 It seems to me like docs as code is the way to do that.
 
 As a side-effect of deep-diving into git workflows and static site generators,
-I've gotten heavily invested in web development. And I love it! That personal
-interest is main reason behind creating this website.
+I've established an interest in web development, and development in general. 
+And I love it! (My wife will vouche for me.)
 
 ## About this site
 
