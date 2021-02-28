@@ -3,11 +3,11 @@ publish = "public"
 command = "hugo --gc --minify"
 
 [context.production.environment]
-HUGO_VERSION = "0.78.0"
+HUGO_VERSION = "0.80.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.78.0"
+HUGO_VERSION = "0.80.0"
 HUGO_ENV = "review"
 HUGO_ENABLEGITINFO = "true"
 HUGO_PARAMS_GITHUB_BRANCH = "$BRANCH"
