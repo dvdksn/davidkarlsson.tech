@@ -1,6 +1,7 @@
 ---
 title: "Better Reviews With CI/CD"
 date: 2020-06-12T19:43:08+02:00
+toc: true
 description: >
     Post discussing how to create a better review experience with git, with automated review builds for pull requests.
 summary: >

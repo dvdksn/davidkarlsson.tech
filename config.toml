@@ -2,6 +2,7 @@ baseURL = "https://davidkarlsson.tech/"
 languageCode = "en-us"
 title = "davidkarlsson.tech"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
 
 [author]
 firstname = "David"
@@ -16,7 +17,7 @@ description = "Personal website and blog of technical writer David Karlsson"
 
 [params.contact]
 email = "hello@davidkarlsson.tech"
-phone = "+4673-682-35-47"
+phone = "+4670-224-26-47"
 linkedin = "https://www.linkedin.com/in/david-karlsson-7b533449/"
 facebook = "https://www.facebook.com/wintastic"
 

@@ -10,10 +10,12 @@
     <time class="post-date" datetime="{{ $Date }}">{{ $Date }}</time>
     <article>
         <p class="summary">{{ .Summary }}</p>
-        <div class="toc">
-            <h2>Contents</h2>
-            {{ .TableOfContents }}
-        </div>
+        {{ if .Params.toc }}
+            <div class="toc">
+                <h2>Contents</h2>
+                {{ .TableOfContents }}
+            </div>
+        {{ end }}
         {{ .Content }}
     </article>
     <hr>

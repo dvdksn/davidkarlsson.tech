@@ -1,6 +1,7 @@
 ---
 title: "Are Technical Writers Backing the Wrong Horse?"
 date: 2020-05-15T19:35:18+02:00
+toc: true
 description: >
   Comparing LML and XML for structured technical writing.
 summary: >
